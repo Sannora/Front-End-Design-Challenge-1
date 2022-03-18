@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Outfit;
+  src: url(Outfit-VariableFont_wght.ttf);
+}
+
+#backgroundFirst {
+  background-color: hsl(220, 17%, 83%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Desktop responsive query */
+@media screen and (min-width: 769px) {
+  #backgroundSecond {
+    width: 18vw;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+  #qrImage {
+    width: 18vw;
+    height: 19vw;
+  }
+  #text {
+    width: 18vw;
+  }
+  #qrImage {
+    border-radius: 1vw;
+  }
+}
+
+/* Mobile responsive query */
+@media screen and (max-width: 768px) {
+  #qrImage {
+    width: 75vw;
+  }
+
+  #text {
+    width: 75vw;
+  }
+
+  #backgroundSecond {
+    padding: 4vw;
+    border-radius: 4vw;
+  }
+
+  #qrImage {
+    border-radius: 4vw;
+  }
+
+  #mentorText {
+    font-size: 6vw;
+  }
+
+  #instructions {
+    font-size: 4.5vw;
+  }
+}
+
+#backgroundSecond {
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+#mentorText {
+  font-family: Outfit;
+  font-weight: 700;
+}
+
+#instructions {
+  color: hsl(212, 8%, 62%);
+  font-family: Outfit;
+  font-weight: 400;
+}
